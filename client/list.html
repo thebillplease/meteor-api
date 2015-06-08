@@ -1,0 +1,16 @@
+<template name="list">
+  <h3>Here are the items:</h3>
+  <UL>
+    {{#each items}}
+        <LI class="sensors {{selectedClass}}"><i>description: {{description}}, Date Entered: {{dateEntered}}, Freshest By: {{freshBy}}, Category: {{category}}, id: {{_id}}</i></LI>
+    {{/each}}
+  </UL>
+</template>
+<template name="addDescription">
+  	<form>
+        <input type="text" name="description">
+        <input type="submit" value="Add Description">
+    </form>
+</template>
+
+
